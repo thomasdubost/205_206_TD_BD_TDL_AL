@@ -1,0 +1,3 @@
+- [ ] Récupérer dynamiquement le contenu principal (propre à chaque page) de la page depuis une base de donnée à l'aide de PHP.
+- [ ] Créer un nouveau layout pour les pages d'articles (sans la nav sidebar)
+- [ ] Ajouter du contenu à la page "__Qu'est ce que la laryngectomie__" (le contenu actuel est trop court et ne justifie pas le besoin d'une page dédiée pour renseigner 13 lignes
