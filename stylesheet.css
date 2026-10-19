@@ -1,0 +1,16 @@
+.titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #D6F3FC;
+}
+.titre img {
+    width: 60px;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    background-color: #1EB8E8;
+}
