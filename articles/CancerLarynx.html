@@ -1,173 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="../stylesheet.css">
 <head>
+    <link rel="stylesheet" href="../stylesheet.css">
     <meta charset="UTF-8">
     <title>site de l'UFMV</title>
-
+    <script src="../loadLayout.js" type="module"></script>
 </head>
-
-
 <body>
-<header class="site-header" id="site-header">
-    <div class="header-inner">
+<header class="site-header" id="site-header"></header>
+<div id="content" class="site-content">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+            <article class="page">
+                <header class="entry-header">
+                    <h1>Le cancer du larynx</h1>
+                </header>
+                <div>
+                    <p class="base">
+                        Le cancer du larynx, communément appelé cancer de la gorge, est une affection qui touche les
+                        cordes vocales ou les régions situées juste en dessous ou au-dessus.
+                    </p>
+                    <p class="base">
+                        Les cancers du larynx sont les plus fréquents des voies aérodigestives supérieures et sont très
+                        différents selon leur siège exact. Le larynx, qui contient les cordes vocales est situé entre le
+                        pharynx en haut et la trachée en bas. C’est une boîte cartilagineuse dont l’extrémité supérieure
+                        épaissie en avant, surtout chez l’homme, est connue sous le nom de pomme d’Adam. Le larynx a un
+                        triple rôle : respiratoire, phonatoire et mécanique (lors de la déglutition).
+                    </p>
+                    <p class="base">
+                        Les cancers du larynx surviennent entre 50 et 70 ans dans deux tiers des cas. Les cas féminins
+                        augmentent régulièrement depuis 30 ans et représentent actuellement 10% de l’ensemble. Les
+                        facteurs de risque les mieux connus sont liés au comportement individuel (usage du tabac et abus
+                        d’alcool importants et prolongés). L’exposition prolongée aux poussières ou aux vapeurs de
+                        produits chimiques (milieu professionnel par ex. ) est également un facteur de risque. Depuis
+                        quelques années, les études prouvent aussi que le virus « papillome humain » (HPV) peut être à
+                        l’origine du cancer du larynx.
+                    </p>
+                    <p class="base">
+                        Le traitement précoce des lésions bénignes prévient leur transformation en tumeur maligne. Dans
+                        le cas contraire, la tumeur s’étend et s’infiltre en profondeur.
+                    </p>
+                </div>
 
-        <a href="/" class="header-logo" aria-label="Accueil">
-            <img src="../assets/UFMV_logo.png" alt="Logo" height="60px">
-        </a>
+                <div>
+                    <h1>
+                        La maladie
+                    </h1>
+                    <p>
+                        Les voies aérodigestives supérieures (VADS) sont au carrefour de 3 fonctions :
+                    </p>
+
+                    <ul>
+                        <li>
+                            la déglutition,
+                        </li>
+                        <li>
+                            la respiration,
+                        </li>
+                        <li>
+                            la phonation.
+                        </li>
+                    </ul>
+                    <p>
+                        Ce type de cancer atteint majoritairement les hommes mais la proportion des femmes est en
+                        constante évolution (15 % en 2017). On constate depuis plusieurs années une tendance à la baisse
+                        chez les hommes.
+                    </p>
+                    <p>
+                        Toutefois les cancers féminins augmentent et l’âge moyen d’apparition diminue. Ils sont dus en
+                        majorité à une consommation abusive d’alcool et de tabac ; le risque étant multiplicatif entre
+                        la quantité d’alcool et de tabac consommés.
+                    </p>
+
+                    <p>
+
+                        Certains cancers sont associés à une exposition à des composés nocifs dans un cadre
+                        professionnel (amiante, certains métaux, peintures, pesticides…). Depuis quelques années, les
+                        études prouvent aussi que le virus « papillome humain » (HPV) peut être à l’origine du cancer du
+                        larynx.
+
+                    </p>
+                </div>
+                <div>
+                    <h1>
+                        Les signes d’alerte
+                    </h1>
+
+                    <p>
+                        Les premiers symptômes des cancers du larynx sont en général assez discrets, et se matérialisent
+                        le plus souvent sous forme de lésions au niveau des cordes vocales.
+                    </p>
+                    <p>
+                        Ils se manifestent sous la forme :
+                    </p>
+
+                    <ul>
+                        <li>
+                            d’une douleur à l’oreille,
+                        </li>
+                        <li>
+                            d’une gêne à la respiration, surtout à la phase d’inspiration
+                        </li>
+                        <li>
+                            d’une modification de la voix, qui devient rauque, voilée, éteinte
+                        </li>
+                        <li>
+                            d’une gêne à la déglutition, avec sensation d’accrochage ou de blocage lors de
+                            l’alimentation
+                        </li>
+                        <li>
+                            d’une tuméfaction cervicale (grosseur sur le cou).
+                        </li>
+                    </ul>
+                    <p>
+                        Ce sont pratiquement les seuls signes d’alerte.
+                    </p>
 
 
-        <nav class="header-nav" aria-label="Navigation principale">
-            <a href="/articles/QuiSommeNous.html">Qui sommes-nous ?</a>
-            <a href="/articles/CancerLarynx.html">Cancer du larynx</a>
-            <a href="/articles/Actualite.html">Actualité</a>
-            <a href="/articles/Culture.html">Culture</a>
-            <a href="/articles/laryngectomie.html">Laryngectomie</a>
-            <a href="/articles/QueVaTilMArriver.html">Que va-t-il m'arriver ?</a>
-            <a href="/articles/QuestionReponse.html">Questions / réponses</a>
-            <a href="/articles/ContactezNous.html">Contactez-nous</a>
-        </nav>
-
-        <div class="dropdown">
-            <button
-                    class="hamburger-btn"
-                    id="hamburger-btn"
-                    aria-label="Associations régionales"
-                    aria-expanded="false"
-                    aria-controls="dropdown-content"
-            >
-                <img src="../assets/menu.png" alt="" width="24" height="24">
-            </button>
-
-            <div class="dropdown-content" id="dropdown-content">
-                <p class="dropdown-title">Associations régionales</p>
-                <a href="https://www.mutiles-voix.com/associations/p-a-c-a/" target="_blank" rel="noopener noreferrer">P.A.C.A</a>
-                <a href="https://www.mutiles-voix.com/associations/poitou-charentes/" target="_blank" rel="noopener noreferrer">Poitou-Charentes</a>
-                <a href="https://www.mutiles-voix.com/associations/pays-de-loire/" target="_blank" rel="noopener noreferrer">Pays de Loire</a>
-                <a href="https://www.mutiles-voix.com/associations/hauts-de-france/" target="_blank" rel="noopener noreferrer">Nord Pas de Calais</a>
-                <a href="https://www.mutiles-voix.com/associations/lorraine/" target="_blank" rel="noopener noreferrer">Lorraine</a>
-                <a href="https://www.mutiles-voix.com/associations/limousin/" target="_blank" rel="noopener noreferrer">Limousin</a>
-                <a href="https://www.mutiles-voix.com/associations/ile-de-france/" target="_blank" rel="noopener noreferrer">Île de France</a>
-                <a href="https://www.mutiles-voix.com/associations/rhones-alpes/" target="_blank" rel="noopener noreferrer">Auvergne Rhône-Alpes</a>
-                <a href="https://www.mutiles-voix.com/associations/occitanie/" target="_blank" rel="noopener noreferrer">Occitanie</a>
-                <a href="https://www.mutiles-voix.com/associations/haute-normandie/" target="_blank" rel="noopener noreferrer">Haute Normandie</a>
-                <a href="https://www.mutiles-voix.com/associations/dauphine/" target="_blank" rel="noopener noreferrer">Dauphiné</a>
-                <a href="https://www.mutiles-voix.com/associations/franche-comte/" target="_blank" rel="noopener noreferrer">Franche-Comté</a>
-                <a href="https://www.mutiles-voix.com/associations/champagne-ardennes/" target="_blank" rel="noopener noreferrer">Champagne-Ardenne</a>
-                <a href="https://www.mutiles-voix.com/associations/bourgogne/" target="_blank" rel="noopener noreferrer">Bourgogne</a>
-                <a href="https://www.mutiles-voix.com/associations/bretagne/" target="_blank" rel="noopener noreferrer">Bretagne</a>
-                <a href="https://www.mutiles-voix.com/associations/region-auvergne/" target="_blank" rel="noopener noreferrer">Auvergne – Rhône-Alpes (région)</a>
-                <a href="https://www.mutiles-voix.com/associations/centre/" target="_blank" rel="noopener noreferrer">Centre</a>
-                <a href="https://www.mutiles-voix.com/associations/aquitaine/" target="_blank" rel="noopener noreferrer">Aquitaine</a>
-                <a href="https://www.mutiles-voix.com/associations/alsace/" target="_blank" rel="noopener noreferrer">Alsace</a>
-            </div>
-        </div>
-
+                </div>
+            </article>
+        </main>
     </div>
-</header>
-
-<div>
-<h1>
-    Le cancer du larynx
-</h1>
-
-<p class ="base">
-    Le cancer du larynx, communément appelé cancer de la gorge, est une affection qui touche les cordes vocales ou les régions situées juste en dessous ou au-dessus.
-</p>
-<p class="base">
-    Les cancers du larynx sont les plus fréquents des voies aérodigestives supérieures et sont très différents selon leur siège exact. Le larynx, qui contient les cordes vocales est situé entre le pharynx en haut et la trachée en bas. C’est une boîte cartilagineuse dont l’extrémité supérieure épaissie en avant, surtout chez l’homme, est connue sous le nom de pomme d’Adam. Le larynx a un triple rôle : respiratoire, phonatoire et mécanique (lors de la déglutition).
-</p>
-<p class="base">
-    Les cancers du larynx surviennent entre 50 et 70 ans dans deux tiers des cas. Les cas féminins augmentent régulièrement depuis 30 ans et représentent actuellement 10% de l’ensemble. Les facteurs de risque les mieux connus sont liés au comportement individuel (usage du tabac et abus d’alcool importants et prolongés). L’exposition prolongée aux poussières ou aux vapeurs de produits chimiques (milieu professionnel par ex. ) est également un facteur de risque. Depuis quelques années, les études prouvent aussi que le virus « papillome humain » (HPV) peut être à l’origine du cancer du larynx.
-</p>
-<p class="base">
-    Le traitement précoce des lésions bénignes prévient leur transformation en tumeur maligne. Dans le cas contraire, la tumeur s’étend et s’infiltre en profondeur.
-</p>
 </div>
 
-<div>
-    <h1>
-        La maladie
-    </h1>
-    <p>
-        Les voies aérodigestives supérieures (VADS) sont au carrefour de 3 fonctions :
-    </p>
 
-    <ul>
-        <li>
-            la déglutition,
-        </li>
-        <li>
-            la respiration,
-        </li>
-        <li>
-            la phonation.
-        </li>
-    </ul>
-    <p>
-        Ce type de cancer atteint majoritairement les hommes mais la proportion des femmes est en constante évolution (15 % en 2017).  On constate depuis plusieurs années une  tendance à la baisse chez les hommes.
-    </p>
-    <p>
-        Toutefois les cancers féminins augmentent et l’âge moyen d’apparition diminue. Ils sont dus en majorité à une consommation abusive d’alcool et de tabac ; le risque étant multiplicatif entre la quantité d’alcool et de tabac consommés.
-    </p>
-
-    <p>
-
-        Certains cancers sont associés à une exposition à des composés nocifs dans un cadre professionnel (amiante, certains métaux, peintures, pesticides…). Depuis quelques années, les études prouvent aussi que le virus « papillome humain » (HPV) peut être à l’origine du cancer du larynx.
-
-    </p>
-</div>
-<div>
-    <h1>
-        Les signes d’alerte
-    </h1>
-
-    <p>
-        Les premiers symptômes des cancers du larynx sont en général assez discrets, et se matérialisent le plus souvent sous forme de lésions au niveau des cordes vocales.
-    </p>
-    <p>
-        Ils se manifestent sous la forme :
-    </p>
-
-    <ul>
-        <li>
-            d’une douleur à l’oreille,
-        </li>
-        <li>
-            d’une gêne à la respiration, surtout à la phase d’inspiration
-        </li>
-        <li>
-            d’une modification de la voix, qui devient rauque, voilée, éteinte
-        </li>
-        <li>
-            d’une gêne à la déglutition, avec sensation d’accrochage ou de blocage lors de l’alimentation
-        </li>
-        <li>
-            d’une tuméfaction cervicale (grosseur sur le cou).
-        </li>
-    </ul>
-    <p>
-        Ce sont pratiquement les seuls signes d’alerte.
-    </p>
-
-
-</div>
-<footer class="site-footer">
-    <h1 class="nom-asso">U-F-M-V</h1>
-
-
-
-    <div class="footer-bottom">
-        <nav class="footer-nav" aria-label="Navigation secondaire">
-
-            <h2 class="footer-title">Découvrir</h2>
-            <ul>
-                <li><a href="/articles/Actualite.html">Actualité</a></li>
-                <li><a href="/articles/Culture.html">Culture</a></li>
-                <li><a href="/articles/ContactezNous.html">Contactez-nous</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
+<footer class="site-footer" id="site-footer"></footer>
 </body>
 </html>
