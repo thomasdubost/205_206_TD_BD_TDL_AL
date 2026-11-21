@@ -13,6 +13,30 @@ async function loadLayout() {
     document.querySelector("#site-header").outerHTML = docHeader.querySelector("#site-header").outerHTML;
     document.querySelector("#site-footer").outerHTML = docFooter.querySelector("#site-footer").outerHTML;
     console.log("Header and footer loaded!");
+
+    const mobileBtn = document.getElementById("mobile-menu-btn");
+    const headerNav = document.getElementById("header-nav");
+
+    if (mobileBtn && headerNav) {
+        let hide = true;
+
+        mobileBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            hide = !hide;
+            headerNav.classList.toggle("is-open", !hide);
+            mobileBtn.setAttribute("aria-expanded", String(!hide));
+            mobileBtn.textContent = hide ? "☰" : "X";
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!hide && !headerNav.contains(e.target) && e.target !== mobileBtn) {
+                hide = true;
+                headerNav.classList.remove("is-open");
+                mobileBtn.setAttribute("aria-expanded", "false");
+                mobileBtn.textContent = "☰";
+            }
+        });
+    }
     document.querySelector("#scrollTopBtn").addEventListener("click", function() {
             window.scrollBy({ top: -window.scrollY, behavior: "smooth" });
         });
