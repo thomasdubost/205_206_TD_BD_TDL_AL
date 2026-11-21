@@ -59,12 +59,20 @@ body {
     transition: background 0.15s ease, color 0.15s ease;
 }
 
-.header-nav a:hover , .header-nav div:hover{
+.header-nav a:hover , .header-nav >div:hover{
     background: rgba(0, 0, 0, 0.067);
 }
 
 .dropdown {
     position: relative;
+}
+.dropdown::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 16px; /* Matches the padding-top */
+    height: 32px;
 }
 
 .hamburger-btn {
