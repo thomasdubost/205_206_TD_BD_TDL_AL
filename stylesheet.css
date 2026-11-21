@@ -265,4 +265,15 @@ body {
 #scrollTopBtn.visible {
   opacity: 1;
   transform: translateY(0);
-}   
+}
+
+#associationRegInput {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+/*#associationRegInput:focus {outline: 3px solid #ddd;}*/
