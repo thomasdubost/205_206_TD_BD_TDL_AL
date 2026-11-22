@@ -145,7 +145,7 @@ input:focus-visible {
     visibility: visible;
     transform: translateY(0);
 }
-
+ 
 .dropdown-title {
     padding: 6px 12px 7px;
     font-size: 11px;
