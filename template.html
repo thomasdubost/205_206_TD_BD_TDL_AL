@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Titre de la page (majuscule au début)</title>
+    <link rel="stylesheet" href="stylesheet.css"> // ou ../stylesheets.css quand le fichier se trouve dans articles.
+    <script src="loadLayout.js" type="module"></script> // ou ../loadLayout.js quand le fichier se trouve dans articles
+</head>
+<body>
+    <header class="site-header" id="site-header"></header>
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main">
+                <article class="page">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Titre de la page (potentiellement le même que &lt;title&gt;</h1>
+                    </header>
+                    <div class="entry-content">
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+    <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>
+
+<!-- Abréviation emmet pour faire la structure : 
+    header#site-header.site-header+(div#content.site-content>div#primary.content-area>main#id.site-main>article#page>header.entry-header>h1.entry-title^div.entry-content)+footer.site-footer#site-footer
+-->
